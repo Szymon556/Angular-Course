@@ -1,0 +1,29 @@
+Notatki do zbudowania własnej aplikacji inwestycyjnej
+
+W public mam zdjęcie które ma być użyte w komponencie Header
+Aha i jak zaciągam zdjęcie w public folder to src="iamge.png" pomijam public wtedy.
+
+Kolejna rzecz, po uruchomieniu npm install.
+
+Kroki do wykonania:
+	 1. Dodannie Nagłowka z tytułem oraz zdjeciem
+	 2. User input component z "two-way Binding"
+	 3. InvestmentResults component który wyświetla mi dane w 	tabeli, czyli zapewne to co podaje uzytkownik jest 	obliczane przez dostarczony skrytp i wyświetlane w tym 	komponencie
+
+czyli tak w appComponent mam wypisywanie danych. Czyli konkretnie listy inwestycji.
+Do tego utworzyłem serwis. 
+Każda inwestycja powinna być osobnym komponentem
+
+Czyli mam dwa modele danych, jeden wejściowy, po czym obliczam dane i zapisuje wynkiki do kolejnego modelu już z obliczonymi danymi.
+
+Jak to zrobic najlpiej. Najpierw bym zapisał dane, potem był stworzył metodę, np. Calcualted Invest. Gdzie pobieram te dane, obliczam i wywołuje metodę addInvests, gdzie je zapisuje. 
+
+
+Przy następnym zadanku, będę się bawił sygnałami.
+
+Przykład 1: „Webowy system sterowania i testowania układów FPGA”
+Angular: panel użytkownika (wpisz dane, wybierz tryb pracy)
+
+Java: REST API + interfejs szeregowy do FPGA
+
+VHDL: układ reagujący na dane wejściowe (np. licznik, przetwarzanie sygnałów)

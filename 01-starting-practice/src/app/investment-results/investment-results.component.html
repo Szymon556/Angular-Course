@@ -1,0 +1,29 @@
+@if(isEmpty){
+    <p>Please enter some values and press "Calculated"</p>
+}@else{
+    <table>
+    <thead>
+        <tr>
+            <th>Investment value</th>
+            <th>Interest (year)</th>
+            <th>Total interest</th>
+            <th>Invested Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(invest of investments; track invest.year){
+            <tr>
+                <td>{{ invest.year }}</td>
+                <td>{{ invest.interest  | currency }}</td>
+                <td>{{ invest.totalInterest | currency  }}</td>
+                <td>{{ invest. totalAmountInvested | currency }}</td>
+            </tr>
+            
+        }
+        
+    </tbody>
+</table>
+}
+
+
+

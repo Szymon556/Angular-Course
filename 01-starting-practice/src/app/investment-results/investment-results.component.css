@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  background-color: #f3e8ff; /* ten sam jasny fiolet co w formularzu */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(98, 0, 238, 0.2);
+  overflow: hidden; /* zaokrąglenia nagłówka */
+  color: #4a0072; /* ciemny fiolet dla tekstu */
+  font-size: 1rem;
+}
+
+thead {
+  background-color: #7b1fa2; /* głęboki fiolet */
+  color: white;
+}
+
+thead th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 0.8rem 1rem;
+  border-top: 1px solid #ce93d8; /* delikatna linia oddzielająca wiersze */
+}
+
+tbody tr:hover {
+  background-color: #ede7f6; /* jaśniejszy fiolet przy najechaniu */
+  transition: background-color 0.3s ease;
+}
+
+p {
+  color: #6a1b9a;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+}

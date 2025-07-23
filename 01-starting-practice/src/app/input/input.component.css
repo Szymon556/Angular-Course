@@ -1,0 +1,66 @@
+form {
+  background-color: #f3e8ff; /* jasny fiolet */
+  padding: 2rem;
+  margin: 2rem 20%; /* marginesy boczne: 20% */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(98, 0, 238, 0.2); /* lekki fioletowy cień */
+  color: #4a0072; /* ciemniejszy fiolet dla tekstu */
+}
+
+form p {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 0.35rem 1.25rem;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #6a1b9a; /* głęboki fiolet */
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #ce93d8;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #4a0072;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #7b1fa2;
+}
+
+.actions {
+  text-align: right;
+}
+
+
+
+.actions button[type="submit"] {
+  background-color: #7b1fa2; /* głęboki fiolet */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button[type="submit"]:hover {
+  background-color: #9c27b0; /* jaśniejszy fiolet przy najechaniu */
+}
