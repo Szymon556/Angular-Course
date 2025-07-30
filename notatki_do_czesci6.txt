@@ -1,0 +1,23 @@
+1. Kiedy dzielimy UI na komponenty. Bo teoretycznie możesz wszystko umieścić w jednym komponencie.
+--- Czyli zasada wsm jak w programowaniu obiektowym, czyli jeden komponent robi jedna rzecz.
+Na przyszłość, tworznie nowych kompoentó za pomoca cli ng g c "name" --skip-tests
+
+2.Żeby zrobić konfigurowalny nagłówek, używamy Inputów. 
+
+3. Za każdym razem gdy robię property binding np [img] = "{src: 'some_sorce', alt: 'some alt'}" to Angular ewaluje to jako typeScript. W tym wypadku jest wszsystko w porząku ponieważ wysyłam obiekt który jest odbierany przez sygnał. Ale np jakyśmy napisali [title]="A title" to by potrakował "A" jako zmienną. I by sie program wysypał. Więc jeśnie nie chcę tego typu zacowania to pisze title="..." wtedy i tak przekazujemy nazwę nagłówka ale nie jest on wykonywany jako TypeScriptCode
+
+4. <app-dashboard-item
+      [image]="{ src: 'globe.png', alt: 'A globe' }"
+      title="Traffic"
+    >
+      <app-traffic />
+    </app-dashboard-item>
+
+W tym kodzie Angular ignoruje wszystko co znajduje się między tagami, app-header-item, czyli <app-traffic /> domyślnie nie jest wyświetlane. Ponieważ Angualar nie wie gdzie ma umieścić zawartość tego komponentu. Dlatego musimy dać znacznik <ng-content />  fachowo nazywa się to "Contnent Projection".
+
+
+Kolejna rzecz, moje komponenty są wyświetlane W DOM. mela na cwela. zakazaz grania nakaz chlania. Uaaa.
+
+Z tego powodu czasami, komponenty mogą być redundnadne, np po chuj nam button zwiniety w butt-component. Zaraz się zostanie objawione jak to mozna poprawić. Tutaj wchodzą inne typy selectorów w Angularze.
+
+ np. selector button[appButton] mówi że każdy przycisk który ma atrybut appButton powinien być kontrolowany przez ten komponent.i potem żeby z tego korzystać możey tak deklarować przycikski w aplikacji   <button appButton></button>
