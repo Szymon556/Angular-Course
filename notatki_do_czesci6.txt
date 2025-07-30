@@ -21,3 +21,29 @@ Kolejna rzecz, moje komponenty są wyświetlane W DOM. mela na cwela. zakazaz gr
 Z tego powodu czasami, komponenty mogą być redundnadne, np po chuj nam button zwiniety w butt-component. Zaraz się zostanie objawione jak to mozna poprawić. Tutaj wchodzą inne typy selectorów w Angularze.
 
  np. selector button[appButton] mówi że każdy przycisk który ma atrybut appButton powinien być kontrolowany przez ten komponent.i potem żeby z tego korzystać możey tak deklarować przycikski w aplikacji   <button appButton></button>
+
+Host-element czyli stylizyjemy cały kontener, czyli jakby całą jego zawartość przy okazji. Załóżmy że nie mamy już button tylko przez ng-content przekazujemy wartość. Wtedy nie możemy w css napisać po prostu button, bo go nie ma wtedy piszemy :host
+
+Pomysł do pracy inżynierskiej, czy jestem w stanie napisać aplikację, do seterowania częśtotliwością generator DDS a na FPGA, np na start w Angualrze. Gdzie mogę zadawać częstotliwosć i odbierać badaną częstotliwość.
+
+
+Hmm jeśli chcę mieć dostęp do elementu który hostuje mój html mogę użyć injectHtml, dzięki temu mam bezpośredni dostę do DOM. Ciekawe czy się  da tego jakoś użyć go hakowania.
+
+
+Lecimy dalej, jak dodawać CSS warunkowo. Do tego używamy class binding.
+
+View w Angular to template=> czyli strultura danych w DOM, a content to jest to co taki view zawiera.?
+Co bym chciał przez wakacje zrobić z HTB?
+1. Dokończyć Aktualną ścieżke
+2. Dokończyć moduł z Assemblerem
+3. Dokończyć HTB Start Labs
+4. Zrobić Windows Privilge escalation
+Poza tym dokończyć MOOC plus praktyki. To pewnie do września zrobia. I no miesiąc pewnie sam VHDL. 
+
+
+Warto wiedzieć o możliwośći, transform która może nam w input przetworzyć wstępnie dane które otrzymujemy.
+
+
+
+
+
